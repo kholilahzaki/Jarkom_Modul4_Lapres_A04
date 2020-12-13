@@ -120,7 +120,7 @@ xterm -T LUMAJANG -e linux ubd0=LUMAJANG,jarkom umid=LUMAJANG eth0=daemon,,,swit
 xterm -T TULUNGAGUNG -e linux ubd0=TULUNGAGUNG,jarkom umid=TULUNGAGUNG eth0=daemon,,,switch13 mem=64M &
 ```
 
-2. Pada UML, setting interface pada setiap UML dengan menjalankan perintah `nano /etc/network/interfaces` kemudian restart network dengan perintah `service networking restart`. Untuk UML yang merupakan router, juga harus di-uncomment pada perintah net.ipv4.ip_forward=1 pada file sysctl.conf, dapat dibuka dengan mengetikkan `nano /etc/sysctl.conf` dan untuk restart gunakan `sysctl -p`. Jangan lupa di setiap UML yang merupakan router buatlah file iptables.sh yang berisi `iptables –t nat –A POSTROUTING –o eth0 –j MASQUERADE –s 192.168.0.0/16` dan jalankan setiap saat akan menggunakan UML dengan perintah `bash iptables.sh`. Berikut setting file /etc/network/interfaces untuk setiap UML:
+2. Pada UML, setting interface pada setiap UML dengan menjalankan perintah `nano /etc/network/interfaces` kemudian restart network dengan perintah `service networking restart`. Untuk UML yang merupakan router, juga harus di-uncomment pada perintah net.ipv4.ip_forward=1 pada file sysctl.conf, dapat dibuka dengan mengetikkan `nano /etc/sysctl.conf` dan untuk restart gunakan `sysctl -p`. Jangan lupa di setiap UML yang merupakan router buatlah file iptables.sh yang berisi `iptables –t nat –A POSTROUTING –o eth0 –j MASQUERADE –s 192.168.0.0/16` dan jalankan iptables setelah konfigurasi interface selesai dengan perintah `bash iptables.sh`. Berikut setting file /etc/network/interfaces untuk setiap UML:
 
 **SURABAYA**
 <p align="center"><img width="600" src="https://user-images.githubusercontent.com/61299072/102008006-07167880-3d60-11eb-88ae-c752435c3216.PNG"></p><br>
