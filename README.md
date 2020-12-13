@@ -208,4 +208,4 @@ route add -net 192.168.0.0 netmask 255.255.252.0 gw 192.168.4.2
 route add -net 192.168.128.0 netmask 255.255.240.0 gw 192.168.144.2
 ```
 
-Untuk menjalankan route.sh, bisa dengan menggunakan perintah `source route.sh`
+Untuk menjalankan route.sh, bisa dengan menggunakan perintah `source route.sh`.
