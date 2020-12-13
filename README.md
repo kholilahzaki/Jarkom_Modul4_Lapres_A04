@@ -183,7 +183,7 @@ xterm -T TULUNGAGUNG -e linux ubd0=TULUNGAGUNG,jarkom umid=TULUNGAGUNG eth0=daem
 **TULUNGAGUNG**
 <p align="center"><img width="600" src="https://user-images.githubusercontent.com/61299072/102008011-0847a580-3d60-11eb-8a17-81b4ede0e9f8.PNG"></p><br>
 
-3. Masukkan konfigurasi sebagai berikut untuk routing pada 
+3. Untuk routing, masukkan konfigurasi sebagai berikut pada `route.sh` agar saat UML di restart konfigurasi untuk routing tidak hilang
 - Surabaya
 ```
 route add -net 192.168.128.0 netmask 255.255.192.0 gw 192.168.192.2
@@ -208,3 +208,4 @@ route add -net 192.168.0.0 netmask 255.255.252.0 gw 192.168.4.2
 route add -net 192.168.128.0 netmask 255.255.240.0 gw 192.168.144.2
 ```
 
+Untuk menjalankan route.sh, bisa dengan menggunakan perintah `source route.sh`
