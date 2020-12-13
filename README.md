@@ -4,7 +4,7 @@ Lapres Jarkom Modul 4 A04
 ## VLSM
 ### Subnetting
   1. Melakukan subnetting pada topologi yang diberikan. Sehingga terbentuklah 13 subnet di dalam topologi seperti pada gambar berikut.
-     *gambar*
+     *gambar topologi*
   2. Menentukan jumlah alamat IP yang dibutuhkan oleh tiap subnet dan lmelakukan labelling netmask berdasarkan jumlah IP yang dibutuhkan.
       | Subnet      | Jumlah IP   | Netmask |
       | ----------- |         ---:| ------- |
@@ -25,4 +25,13 @@ Lapres Jarkom Modul 4 A04
       
       Berdasarkan total IP dan netmask yang dibutuhkan, maka dapat menggunakan netmask /19 untuk memberikan pengalamatan IP pada subnet.
   3.  Subnet besar yang dibentuk memiliki NID 192.168.0.0 dengan netmask /19. Selanjutnya menghitung pembagian IP berdasarkan NID dan netmask tersebut menggunakan pohon seperti gambar berikut.
-      *gambar*
+      ![vlsm_tree](img/vlsm_tree.png)
+
+### CPT
+
+   1. Membuat topologi pada CPT
+        ![vlsm_cpt](img/vlsm_cpt.png)
+   2. Mengatur IP untuk masing masing interface yang ada disetiap device sesuai dengan pembagian subnet pada pohon VLSM.
+        ![ip_router](img/ip_router.png)
+   3. Melakukan Routing pada setiap router
+        ![routing](img/routing.png)
