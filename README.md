@@ -13,7 +13,7 @@ Kelompok A04 menggunakan VLSM pada CPT dan CIDR pada UML.
 ---------------------------------
 ### Subnetting
   1. Melakukan subnetting pada topologi yang diberikan. Sehingga terbentuklah 13 subnet di dalam topologi seperti pada gambar berikut.
-  ![topologi soal](https://user-images.githubusercontent.com/61299072/102007739-3d52f880-3d5e-11eb-926c-832b1c7372c2.PNG)
+  ![pembagian subnet](img/pembagian subnet.JPG)
 
   2. Menentukan jumlah alamat IP yang dibutuhkan oleh tiap subnet dan lmelakukan labelling netmask berdasarkan jumlah IP yang dibutuhkan.
       | Subnet      | Jumlah IP   | Netmask |
